@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function armstr()
+        {
+            var arm=0,a,b,c,d,num;
+            num=Number(document.getElementById("no_input").value);
+
+            temp=num;
+            while(temp>0)
+            {
+            a=temp%10;
+            temp=parseInt(temp/10); // type casting
+            arm=arm+a*a*a;
+            }
+            if(arm==num)
+            {
+            alert("Armstrong number");
+            }
+            else
+            {
+            alert("Not Armstrong number");
+            }
+        }
+    </script>
+</body>
+Enter any Number: <input id="no_input">
+<button onclick="armstr()">Check</button></br></br>
+</html>

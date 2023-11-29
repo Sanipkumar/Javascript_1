@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var number=prompt("Ente any number to check palindrom");
+    var remainder, temp, reversedNumber = 0;
+    temp = number;
+    while(number > 0)
+    {
+        remainder = number % 10;
+        number = parseInt(number / 10);
+        reversedNumber = reversedNumber*10 + remainder;
+    }
+    //check for palindrom
+    if(reversedNumber == temp)
+    {
+        document.write("The given number is Palindrome");
+    }
+    else
+    {
+        document.write("The given number is not palindrome");
+    }
+
+
+checkPalindromeNumber(ada)
+
+    </script>
+    
+</body>
+</html>
